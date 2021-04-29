@@ -1,0 +1,35 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: cn.hutool:hutool-all
+    versions:
+    - 5.5.7
+    - 5.5.8
+    - 5.5.9
+    - 5.6.0
+    - 5.6.1
+    - 5.6.2
+    - 5.6.3
+  - dependency-name: org.springframework.boot:spring-boot-dependencies
+    versions:
+    - 2.4.2
+    - 2.4.3
+    - 2.4.4
+  - dependency-name: com.alibaba:druid-spring-boot-starter
+    versions:
+    - 1.2.4
+    - 1.2.5
+  - dependency-name: org.apache.shiro:shiro-ehcache
+    versions:
+    - 1.7.0
+  - dependency-name: org.apache.shiro:shiro-spring
+    versions:
+    - 1.7.0
+  - dependency-name: org.apache.shiro:shiro-core
+    versions:
+    - 1.7.0
